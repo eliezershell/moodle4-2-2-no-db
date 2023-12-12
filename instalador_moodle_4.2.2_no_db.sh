@@ -42,6 +42,10 @@ if [ $? -gt 0 ]; then
         echo "Erro ao alterar o arquivo php.ini!"; exit 0
 fi
 
+sudo mv .htaccess /var/www
+sudo chmod -R 770 /var/www
+sudo chown -R www-data:www-data /var/www
+
 sudo systemctl restart apache2
 
 echo "------------------------------Instalação concluída com sucesso!------------------------------"
