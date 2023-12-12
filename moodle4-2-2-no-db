@@ -26,8 +26,8 @@ echo "--------------------------------------------------------------------------
 git clone git://git.moodle.org/moodle.git
 cd moodle
 git branch -a
-git branch --track MOODLE_403_STABLE origin/MOODLE_403_STABLE
-git checkout MOODLE_403_STABLE
+git branch --track MOODLE_402_STABLE origin/MOODLE_402_STABLE
+git checkout MOODLE_402_STABLE
 if [ $? -gt 0 ]; then
         echo "Erro ao clonar Moodle4.2!"; exit 0
 fi
