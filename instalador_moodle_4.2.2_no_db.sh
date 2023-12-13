@@ -44,6 +44,8 @@ fi
 
 sudo find /var/www -type d -exec chmod 750 {} \; -o -type f -exec chmod 640 {} \;
 sudo chown -R root:www-data /var/www
+sudo chmod a+w /var/www
+sudo chmod a+w /var/www/html
 
 sudo systemctl restart apache2
 
