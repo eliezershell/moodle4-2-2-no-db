@@ -43,7 +43,7 @@ if [ $? -gt 0 ]; then
 fi
 
 sudo find /var/www -type d -exec chmod 750 {} \; -o -type f -exec chmod 640 {} \;
-chown -R root:www-data /var/www
+sudo chown -R root:www-data /var/www
 
 sudo systemctl restart apache2
 
