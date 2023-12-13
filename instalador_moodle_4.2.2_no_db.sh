@@ -44,6 +44,7 @@ fi
 
 #sudo mv .htaccess /var/www
 sudo find /var/www/html -type d -exec chmod 755 {} \; -o -type f -exec chmod 644 {} \;
+sudo chmod 775 /var/www
 
 sudo systemctl restart apache2
 
